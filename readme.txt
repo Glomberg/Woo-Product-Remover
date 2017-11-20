@@ -32,15 +32,17 @@ If you would like some custom work done, or have an idea for a plugin you're rea
 = How do we delete products? =
 
 Just setup the plugin, go to the Woo Product Remover screen, and click delete all. 
-The plugin will confirm how many products/product variations have been deleted
+The plugin will confirm how many products/product variations have been deleted.
 
 = What if I don't have products, what happens? =
 
 You don't have products, you don't need to use the plugin .. lol .. But if you do, it will inform you that 0 products have been deleted
 
-= Does the plugin remove extra product database fields? =
+= Does the plugin remove relevant categories, tags, and taxonomies? =
 
-The plugin cleans up your database from all product meta data that is stored by woocommerce. Deleting the products and leaving those will exhaust your resources, especially if you have a large database, which is why we handle removing them
+In its prior release, the plugin automatically removed all data relevant to categories, tags, and taxonomies. Yet based on several requests, we made adjustments so that a checkbox is now available to allow the user to chose whether those will be removed or not before proceeding with the removal. 
+The default behaviour would be to keep all this data, since many users simply do not want to recreate relevant tags, taxonomies and categories and are just cleaning up their product database.
+Yet, if you still desire otherwise, you can check this checkbox, and perform a hard removal of all related data associated with the products.
 
 = What types of products this plugin removes? =
 
@@ -52,8 +54,9 @@ Super fast! Since we are relying on mysql query, the plugin runs pretty quickly 
 
 == Screenshots ==
 
-1. Screenshot for the plugin default page
-2. Screenshot for the plugin after removing all products
+1. Screenshot for the plugin link in the left menu bar: https://www.dropbox.com/s/yftff9izs7u11op/plugin_left_menu.png?dl=0
+2. Screenshot for the plugin's landing page: https://www.dropbox.com/s/dvaeq6w6h4m2ngp/landing_screen.png?dl=0
+3. Screenshot for the success screen after removing all products: https://www.dropbox.com/s/s5rxnhekdofly0m/success_screen.png?dl=0
 
 == Changelog ==
 
